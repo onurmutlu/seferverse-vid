@@ -2,10 +2,78 @@
 .DS_Store
 Thumbs.db
 
-# Editors
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.venv/
+venv/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Tools/IDE
 .vscode/
 .idea/
 
-# Renders/exports (add paths you render to)
-exports/
-renders/
+# Logs and runtime
+*.log
+pipeline/logs/
+
+# Generated media (keep placeholders)
+pipeline/videos/
+!pipeline/videos/.gitkeep
+pipeline/voices/
+!pipeline/voices/.gitkeep
+pipeline/export/
+!pipeline/export/**/.gitkeep
+
+# Backups
+backup/
+
+# Large binary/media
+pipeline/assets/
+!pipeline/assets/.gitkeep
+
+# Global media ignores (keep repo minimal)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.gif
+*.wav
+*.mp3
+*.aiff
+*.flac
+*.m4a
+*.ogg
+*.opus
+*.aif
+*.caf
+*.aifc
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.tiff
+*.tif
+*.heic
+*.psd
+*.ai
+*.sketch
+*.fig
+*.blend
+*.fbx
+*.obj
+*.stl
+*.zip
+*.tar
+*.tar.gz
+*.7z
